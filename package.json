@@ -1,0 +1,17 @@
+{
+  "name": "signbridge",
+  "version": "0.4.0",
+  "description": "SignBridge: two-way Indian Sign Language and speech interpreter demo that runs in the browser.",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "author": "SignBridge Team",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/engine.test.mjs && node test/ai.test.mjs && node test/learn.test.mjs && node test/hands.test.mjs && node test/lexicon.test.mjs && node test/coach.test.mjs && node test/metrics.mjs",
+    "e2e": "node build.mjs && node test/e2e.cjs"
+  }
+}
